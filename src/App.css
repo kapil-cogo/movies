@@ -2,11 +2,51 @@
   text-align: center;
 }
 
+
+.h1, h1 {
+  font-size: calc(1.5rem + 2.5vw);
+}
+
+.whole-page{
+  background-color: black;
+  height: 100vh;
+}
+
+.whole-single{
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.movies-section{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+
+.single-movie-container{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-description{
+  color: white;
+  font-size: larger;
+}
+
+.image{
+  align-self: center;
+}
+
 .top{
   padding: 1rem;
   display: flex;
   flex: row;
   justify-content: space-between;
+  color: aliceblue;
 }
 
 .search-fav{
@@ -14,6 +54,15 @@
   flex: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.movie-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: aliceblue;
+  
+
 }
 
 /* .movieItem{
@@ -56,12 +105,7 @@ img {
   align-self: center;
 }
 
-.movie-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-}
 
 .open-like{
   display: flex;

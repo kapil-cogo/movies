@@ -58,9 +58,9 @@ function MovieList(props) {
 
   return (
     <>
-      <div>
+      <div className="whole-page">
         <div className="top">
-          <h1>Knock Knock</h1>
+          <h1 id = 'title'>Knock Knock</h1>
           <div className="search-fav">
             <div>
               <input
@@ -76,11 +76,11 @@ function MovieList(props) {
           </div>
         </div>
 
-        <div>
+        <div className= "movies-section">
           {movies && (
-            <div className="row">
+            <div className="row ">
               {movies.map((movie) => (
-                <div className="col-md-3 movie-container">
+                <div className="col-md-3">
                   {/* <p className="movieTitle"> {movie.Title} </p>  */}
                   <Link to={`/${movie.imdbID}`}>
                     {" "}

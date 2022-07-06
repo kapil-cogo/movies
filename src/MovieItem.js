@@ -21,22 +21,23 @@ function MovieItem(){
 
     return(
         <>
-        <div>
-            <div className="movie-tab">
-                {details && <div className="movie-container">
+        <div className="whole-single">
+            
+                {details && <div className="single-movie-container">
 
-                <div><img src={details.Poster} /></div>
+                <div className="image"><img src={details.Poster} /></div>
 
-                <div  className="movie-description icon col-lg-3">
-                    <div>Title: {details.Title}</div> 
-                    <div>Type: {details.Type}</div>
-                    <div>Year: {details.Year}</div>
+                    <div  className="movie-description icon">
+                        <div>Title: {details.Title}</div> 
+                        <div>Type: {details.Type}</div>
+                        <div>Year: {details.Year}</div>
+                    </div>
+
                 </div>
 
-            </div>
             } 
 
-            </div>
+            
         
         </div>
         
